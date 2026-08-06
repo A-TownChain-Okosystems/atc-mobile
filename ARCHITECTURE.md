@@ -1,40 +1,68 @@
 # 🌳 Architektur — atc-mobile
 
-> **Stand:** 2026-08-06 | **Commit:** 9e2590b
+> **Stand:** 2026-08-06 | **Version:** v1.0.0
 > **Teil von:** [A-TownChain Ökosystem](https://github.com/A-TownChain-Okosystems)
 
-## Statistik
+## Beschreibung
+
+Mobile Wallet-App. Biometrische Auth, QR-Scanning, Faucet, NFT-Anzeige.
+
+## Metadaten
 
 | Metrik | Wert |
 |--------|------|
-| Dateien | 15 |
-| Zeilen | 937 |
-| .atc | 5 |
-| .py | 3 |
-| .rs | 0 |
-| .ts/.tsx | 0 |
-| .md | 5 |
+| Layer | L9 — User Apps |
+| Sprint | 3.0 |
+| ATC-Standards | ATC-45, ATC-86 |
+| Status | 🟠 Aufbau |
+| Code-Repo | [atc-mobile](https://github.com/A-TownChain-Okosystems/atc-mobile) |
+| Wiki-Repo | [atc-mobile-wiki](https://github.com/A-TownChain-Okosystems/atc-mobile-wiki) |
 
-## Verzeichnisstruktur
+## Komponenten-Übersicht
+
+| Komponente | Beschreibung | Status |
+|-----------|-------------|--------|
+| `wallet_api.atc` | Wallet-API: accounts, balance, send, receive, history | 📋 GEPLANT |
+| `biometric_auth.atc` | Biometrische Auth: fingerprint, face ID, session, lockout | 📋 GEPLANT |
+| `qr_scanner.atc` | QR-Scanner: address, payment request, deep link | 📋 GEPLANT |
+| `faucet.atc` | Faucet: request testnet tokens, rate limit, status | 📋 GEPLANT |
+| `nft_gallery.atc` | NFT-Gallery: grid view, detail, transfer, metadata | 📋 GEPLANT |
+
+## Architektur-Baum
 
 ```
-├── wallet/ (4 files, 445 lines)
-│   ├── __init__.py (2 lines)
-│   ├── biometric_auth.atc (179 lines)
-│   ├── keygen.py (140 lines)
-│   └── wallet.atc (124 lines)
-├── .gitignore
-├── CHANGELOG.md (21 lines)
-├── FILE_REGISTER.md (22 lines)
+atc-mobile/
+├── README.md
 ├── LICENSE
-├── README.md (101 lines)
-├── ROADMAP.md (21 lines)
-├── STATUS.md (19 lines)
-├── __init__.py (2 lines)
-├── ecdsa.atc (60 lines)
-├── keygen.atc (75 lines)
-└── wallet_api.atc (171 lines)
+├── .gitignore
+├── STATUS.md
+├── ROADMAP.md
+├── CHANGELOG.md
+├── ARCHITECTURE.md
+├── FILE_REGISTER.md
+├── wallet_api.atc
+├── biometric_auth.atc
+├── qr_scanner.atc
+├── faucet.atc
+├── nft_gallery.atc
 ```
+
+## Abhängigkeiten
+
+- **ATCLang Stdlib** (atc-stdlib)
+- **ATC VM** (atc-vm)
+- **ATC Kernel** (atc-kernel)
+
+## Roadmap
+
+| Phase | Aufgabe | Status |
+|-------|---------|--------|
+| Sprint 3.0 | Komponenten-Definition | ✅ ERLEDIGT |
+| Sprint 3.0 | Architektur-Baum | ✅ ERLEDIGT |
+| Sprint 3.0 | Stub-Dateien erstellen | 🔄 IN ARBEIT |
+| Sprint 3.0 | Implementierung | 📋 GEPLANT |
+| Sprint 3.0.1 | Tests | 📋 GEPLANT |
+| Sprint 3.0.2 | Dokumentation | 📋 GEPLANT |
 
 ---
 *Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*

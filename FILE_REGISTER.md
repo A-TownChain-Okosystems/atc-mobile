@@ -1,22 +1,35 @@
 # 📋 File Register — atc-mobile
 
-> **Zweck:** Vollständige Liste aller existierenden Dateien in `atc-mobile`.
-> **Auto-generiert:** 2026-08-05 · **Dateien:** 11
+> **Auto-generiert:** 2026-08-06 | **Agent:** Aurora (MasterBrain · Base44)
 
-| Datei | Zeilen | Typ |
-|------|--------|-----|
-| `./.gitignore` | 23 | .gitignore |
-| `./CHANGELOG.md` | 21 | md |
-| `./FILE_REGISTER.md` | 22 | md |
-| `./LICENSE` | 17 | LICENSE |
-| `./README.md` | 101 | md |
-| `./ROADMAP.md` | 21 | md |
-| `./STATUS.md` | 19 | md |
-| `./__init__.py` | 2 | py |
-| `./wallet/__init__.py` | 2 | py |
-| `./wallet/biometric_auth.atc` | 179 | atc |
-| `./wallet_api.atc` | 171 | atc |
+## Zusammenfassung
+
+| Metrik | Wert |
+|--------|------|
+| Dateien | 17 |
+| Zeilen | 1,138 |
+
+## Dateiliste
+
+| Datei | Zeilen |
+|------|--------|
+| `.gitignore` | 23 |
+| `ARCHITECTURE.md` | 68 |
+| `CHANGELOG.md` | 21 |
+| `COMPONENT_PLAN.md` | 133 |
+| `FILE_REGISTER.md` | 22 |
+| `LICENSE` | 17 |
+| `README.md` | 101 |
+| `ROADMAP.md` | 21 |
+| `STATUS.md` | 19 |
+| `__init__.py` | 2 |
+| `ecdsa.atc` | 60 |
+| `keygen.atc` | 75 |
+| `wallet/__init__.py` | 2 |
+| `wallet/biometric_auth.atc` | 179 |
+| `wallet/keygen.py` | 140 |
+| `wallet/wallet.atc` | 124 |
+| `wallet_api.atc` | 171 |
 
 ---
-
-*atc-mobile · A-TownChain Ökosystem · v1.0.0*
+*Auto-generiert 2026-08-06 · Aurora*
